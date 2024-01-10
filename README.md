@@ -7,7 +7,7 @@ Welcome to the PYTHON Programs and Projects repository! This repository contains
 <h1>Repository Structure </h1>
 
 <pre>
-|-- <a href="https://github.com/Ayush-Thapa/Py-programs-and-projects/tree/main/Programs">PROGRAMS</a> 
+|-- <a href="https://github.com/Ayush-Mgr/Py-programs-and-projects/tree/main/Programs">PROGRAMS</a> 
    |-- 1.HelloWorld
    |-- 2.Addition and Subtraction
    |...
