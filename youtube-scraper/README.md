@@ -1,19 +1,10 @@
-# C Programs and Projects
-
-Welcome to the C Programs and Projects repository! This repository contains various small C programs and projects to help you learn and practice C programming.
-
-
-
-<h1>Repository Structure </h1>
+# YouTube Downloader using Pytubefix
+This program allows you to download mutiple youtube videos or as mp3(music)  
+create a new <a href="https://colab.research.google.com/">GOOGLE COLAB</a> file and follow the steps
+<h1>steps to follow </h1>
 
 <pre>
-|-- <a href="https://github.com/Ayush-Mgr/C-Programs-and-Projects/tree/main/programs">BASIC PROGRAMS</a> 
-   |-- 1.HelloWorld
-   |-- 2.Addition and Subtraction
-   
-|-- <a href="https://github.com/Ayush-Mgr/C-Programs-and-Projects/tree/main/Data%20Algorithms%20in%20c">DATA STRUCTURES</a> 
-   |-- 1.Select Shorting
-   |-- 2.Stack
+step1 :
 
 </pre>
 
