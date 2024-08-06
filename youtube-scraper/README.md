@@ -39,9 +39,25 @@ ys.download(output_path="C:\\Users\\user\\Desktop\\tralpytube",mp3= True )
 </code>
 </pre>
 
+Download multiple files:
+<pre>
+<code>
+
+from pytubefix import YouTube
+from pytubefix.cli import on_progress
+
+list_url = ["https://www.youtube.com/watch?v=QP17MZp7yTg","https://www.youtube.com/watch?v=-wwEaTae1zw&pp=ygUGbXVzaWNz","https://www.youtube.com/watch?v=cl0a3i2wFcc&pp=ygUGbXVzaWNz","https://www.youtube.com/watch?v=AX6OrbgS8lI&pp=ygUGbXVzaWNz"]
+for url in list_url:
+  yt = YouTube(url, on_progress_callback = on_progress)
+  print(yt.title)
+  ys = yt.streams.get_audio_only()
+  ys.download(output_path="/content/Downloads",mp3= True )
+</code>
+</pre>
+
 ## Notes
 
-- Replace `urlL` with the URL of the YouTube video you want to download.
+- Replace `url`or`list_url` with the URL of the YouTube video you want to download.
 - Specify the `output_path` to define where the video should be saved.
 - Remove `mp3 = True` to download file as VIDEO.
 
@@ -49,5 +65,5 @@ Feel free to modify the code to suit your needs and explore the capabilities of 
 
 ## Additional Resources
 
-- <a href="https://Pytubefix.io/" target="_blank">Pytubefix Documentation</a>
-- <a href="https://zulko.github.io/moviepy/" target="_blank">MoviePy Documentation</a>
+- <a href="https://pypi.org/project/pytubefix/" target="_blank">Pytubefix Documentation</a>
+
