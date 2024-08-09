@@ -1,21 +1,18 @@
+# First install pytubefix through 'pip install pytubefix' at compiler 
 
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
 
 def smallDownload():
-  url = input("Enter the URL :\n")
+  url = input("Enter the URL :\n").strip()
 
   yt = YouTube(url, on_progress_callback = on_progress)
   print(yt.title)
 
   ys = yt.streams.get_audio_only()
-  new_var = ys.download(mp3= True )
+  new_var = ys.download(output_path="/content/Downloads",mp3= True )
 
 
-
-'''list_url = [ "https://www.youtube.com/watch?v=DmH6YPWhaDY&pp=ygUFbWVtZXM%3D",
-    "https://www.youtube.com/watch?v=YkE3WuU1DT8&pp=ygULbWVtZXMgc2lnbWE%3D",
-    "https://www.youtube.com/watch?v=RLJ7NnJ7Rpo&pp=ygULbWVtZXMgc2lnbWE%3D"]'''
 
 def MultiDownload():
   inp 
@@ -40,12 +37,6 @@ def MultiDownload():
       continue
 
 
-'''
-yt = YouTube(url, on_progress_callback = on_progress)
-print(yt.title)
-
-ys = yt.streams.get_audio_only()
-ys.download(mp3= True )'''
 
 def main():
   print("Welcome To Youtube Scrapper")
