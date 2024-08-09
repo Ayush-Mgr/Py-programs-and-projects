@@ -15,16 +15,19 @@ def smallDownload():
 
 
 def MultiDownload():
-  inp 
+  inp = None
+  mP3_Option = None
   list_url=[]
+  mP3_Option = input("'Y' to download as music and 'N' to download as Audio+Video :\n").strip().upper()
+
   while inp != 'F':
     x=0
     x=x+1
-    inp = input(f"if done enter \'F\' OR enter the url Links no {x} :\n " )
-    list_url.append(inp)
+    inp = input(f"if done enter \'F\' OR enter the url Links no {x} :\n " ).strip()
+    if inp != 'F':
+      list_url.append(inp)
 
-
-  
+   
   for url in list_url:
     try:
       yt = YouTube(url, on_progress_callback = on_progress)
@@ -32,6 +35,10 @@ def MultiDownload():
       print(yt.title)
       ys = yt.streams.get_audio_only()
       ys.download(filename=ffilename,output_path="/content/Downloads",mp3= True )
+      if mP3_Option == 'Y':
+        new_var = ys.download(output_path="/content/Downloads",mp3= True )
+  
+      new_var = ys.download(output_path="/content/Downloads",mp3= False )
     except Exception as e :
       print(f"failed : {ffilename},error: {e}")
       continue
