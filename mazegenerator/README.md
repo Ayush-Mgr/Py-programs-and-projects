@@ -32,22 +32,6 @@ pip install matplotlib random
 5. **Backtrack** if stuck (classic stack behavior!).
 
 ![DFS Maze Generation](https://media.giphy.com/media/3ohzdIuqJoo8QdKlnW/giphy.gif)
-
-### 🖥 Code Snippet (DFS Logic)
-```python
-def dfs(grid, current):
-    stack = [current]
-    while stack:
-        current = stack.pop()
-        neighbors = get_unvisited_neighbors(current, grid)
-        if neighbors:
-            stack.append(current)
-            next_cell = random.choice(neighbors)
-            remove_wall(current, next_cell)
-            grid[next_cell] = True  # Mark as visited
-            stack.append(next_cell)
-```
-
 ---
 
 ## 🛠 **Technical Deep Dive**
