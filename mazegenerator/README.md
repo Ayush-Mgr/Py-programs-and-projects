@@ -1,6 +1,6 @@
-# 🚀 Maze Generator Suite 🧩
+# 🚀 Maze Generator  🧩
 
-Welcome to the **Maze Generator Suite**! This repository contains three independent Python scripts that generate and animate mazes using Depth-First Search (DFS). Perfect for maze enthusiasts, educators, or coders who love procedural generation! 
+Welcome to the **Maze Generator **! This repository contains three independent Python scripts that generate and animate mazes using Depth-First Search (DFS). Perfect for maze enthusiasts, educators, or coders who love procedural generation! 
 
 ![Maze GIF](https://media.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif)
 
