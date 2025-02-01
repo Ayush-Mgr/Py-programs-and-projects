@@ -28,8 +28,8 @@ pip install matplotlib random
 1. **Start at a random cell**.
 2. **Mark it as visited**.
 3. **Choose a random unvisited neighbor** and carve a path.
-4. **Recursively repeat** until all cells are visited.
-5. **Backtrack** if stuck (classic stack behavior!).
+4. **Recursively Backtrack** if got stuck ,go back to last saved checkpoint.
+5. ** repeat** until all cells are visited.
 
 ![DFS Maze Generation](https://media.giphy.com/media/3ohzdIuqJoo8QdKlnW/giphy.gif)
 ---
