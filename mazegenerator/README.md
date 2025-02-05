@@ -41,8 +41,9 @@ pip install matplotlib random
 - **No maze logic**—just a canvas for visualization!
 
 ### `maze.py`
-- **DFS-driven**: Builds a maze by recursively knocking down walls.
+- **DFS-driven**: Builds a maze by recursively knocking down walls,**recurssive bactracking** and checking unvisited cells 
 - Rendered statically with `matplotlib`.
+
 
 ### `animation_maze.py`
 - **matplotlib.animation magic**: Animates the DFS process step-by-step.
